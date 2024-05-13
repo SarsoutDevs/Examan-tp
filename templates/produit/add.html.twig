@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un produit</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Ajouter un produit</h1>
+        <form action="submit_product.php" method="post">
+            <div class="form-group">
+                <label for="name">Nom du produit :</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Entrez le nom du produit" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Prix :</label>
+                <input type="number" class="form-control" id="price" name="price" placeholder="Entrez le prix du produit" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description :</label>
+                <textarea class="form-control" id="description" name="description" rows="3" placeholder="Entrez la description du produit" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Ajouter le produit</button>
+        </form>
+    </div>
+</body>
+</html>
